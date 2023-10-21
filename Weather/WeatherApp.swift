@@ -16,7 +16,7 @@ struct WeatherApp: App {
                     .tabItem {
                         Label("Window", systemImage: "macwindow")
                     }
-                RainVolumeView()
+                WeatherVolumeView()
                     .tabItem {
                         Label("Volume", systemImage: "cube.transparent")
                     }
@@ -26,15 +26,18 @@ struct WeatherApp: App {
                         Label("Space", systemImage: "globe")
                     }
             }
-            
         }
         
         WindowGroup(id: "RainModel") {
             Rain()
         }
-        .windowStyle(.volumetric) // 볼륨 스타일 윈도우 그룹
+        .windowStyle(.volumetric) // 볼륨 스타일 윈도우 그룹 - Rain
         
-
+        WindowGroup(id: "SnowModel") {
+            Snow()
+        }
+        .windowStyle(.volumetric) // 볼륨 스타일 윈도우 그룹 - Snow
+        
         ImmersiveSpace(id: "ImmersiveSpace") {
             SkyView()
         }.immersionStyle(selection: .constant(.full), in: .full)

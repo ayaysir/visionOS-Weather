@@ -20,6 +20,7 @@ struct WeatherWindowView: View {
             default:
                 EmptyView()
             }
+            
             Picker("날씨 선택", selection: $selectedWeather) {
                 Text("Rain")
                     .tag(0)

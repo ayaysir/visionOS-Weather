@@ -22,6 +22,8 @@
 		446B99E12AE3B881005EF4F1 /* SkySpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B99E02AE3B881005EF4F1 /* SkySpaceView.swift */; };
 		446B99E32AE3B9FF005EF4F1 /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B99E22AE3B9FF005EF4F1 /* SkyView.swift */; };
 		446B99E52AE3BB4F005EF4F1 /* Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B99E42AE3BB4F005EF4F1 /* Sky.swift */; };
+		446B99E72AE41222005EF4F1 /* SnowVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B99E62AE41222005EF4F1 /* SnowVolumeView.swift */; };
+		446B99E92AE41305005EF4F1 /* WeatherVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B99E82AE41305005EF4F1 /* WeatherVolumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		446B99E02AE3B881005EF4F1 /* SkySpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySpaceView.swift; sourceTree = "<group>"; };
 		446B99E22AE3B9FF005EF4F1 /* SkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyView.swift; sourceTree = "<group>"; };
 		446B99E42AE3BB4F005EF4F1 /* Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky.swift; sourceTree = "<group>"; };
+		446B99E62AE41222005EF4F1 /* SnowVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowVolumeView.swift; sourceTree = "<group>"; };
+		446B99E82AE41305005EF4F1 /* WeatherVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,16 +99,11 @@
 		446B99AF2AE3AADE005EF4F1 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				446B99ED2AE41368005EF4F1 /* 3DModel */,
+				446B99EC2AE4134B005EF4F1 /* Space */,
+				446B99EB2AE4133B005EF4F1 /* Volume */,
+				446B99EA2AE41320005EF4F1 /* Window */,
 				446B99B42AE3AADE005EF4F1 /* WeatherApp.swift */,
-				446B99D42AE3B0D2005EF4F1 /* RainWindowView.swift */,
-				446B99DE2AE3B5C8005EF4F1 /* RainVolumeView.swift */,
-				446B99DA2AE3B4CF005EF4F1 /* Rain.swift */,
-				446B99D62AE3B28F005EF4F1 /* SnowWindowView.swift */,
-				446B99DC2AE3B51F005EF4F1 /* Snow.swift */,
-				446B99D82AE3B2F8005EF4F1 /* WeatherWindowView.swift */,
-				446B99E02AE3B881005EF4F1 /* SkySpaceView.swift */,
-				446B99E22AE3B9FF005EF4F1 /* SkyView.swift */,
-				446B99E42AE3BB4F005EF4F1 /* Sky.swift */,
 				446B99B02AE3AADE005EF4F1 /* Packages */,
 				446B99BA2AE3AADE005EF4F1 /* ImageBasedLighting.skybox */,
 				446B99BC2AE3AADF005EF4F1 /* Assets.xcassets */,
@@ -136,6 +135,45 @@
 				446B99CA2AE3AADF005EF4F1 /* WeatherTests.swift */,
 			);
 			path = WeatherTests;
+			sourceTree = "<group>";
+		};
+		446B99EA2AE41320005EF4F1 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				446B99D42AE3B0D2005EF4F1 /* RainWindowView.swift */,
+				446B99D62AE3B28F005EF4F1 /* SnowWindowView.swift */,
+				446B99D82AE3B2F8005EF4F1 /* WeatherWindowView.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		446B99EB2AE4133B005EF4F1 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				446B99DE2AE3B5C8005EF4F1 /* RainVolumeView.swift */,
+				446B99E82AE41305005EF4F1 /* WeatherVolumeView.swift */,
+				446B99E62AE41222005EF4F1 /* SnowVolumeView.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		446B99EC2AE4134B005EF4F1 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+				446B99E02AE3B881005EF4F1 /* SkySpaceView.swift */,
+				446B99E22AE3B9FF005EF4F1 /* SkyView.swift */,
+				446B99E42AE3BB4F005EF4F1 /* Sky.swift */,
+			);
+			path = Space;
+			sourceTree = "<group>";
+		};
+		446B99ED2AE41368005EF4F1 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				446B99DA2AE3B4CF005EF4F1 /* Rain.swift */,
+				446B99DC2AE3B51F005EF4F1 /* Snow.swift */,
+			);
+			path = 3DModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +289,8 @@
 				446B99DB2AE3B4CF005EF4F1 /* Rain.swift in Sources */,
 				446B99E32AE3B9FF005EF4F1 /* SkyView.swift in Sources */,
 				446B99DD2AE3B51F005EF4F1 /* Snow.swift in Sources */,
+				446B99E92AE41305005EF4F1 /* WeatherVolumeView.swift in Sources */,
+				446B99E72AE41222005EF4F1 /* SnowVolumeView.swift in Sources */,
 				446B99B52AE3AADE005EF4F1 /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,8 +11,8 @@ import RealityKit
 struct Sky: View {
     var body: some View {
         RealityView { content in
-            guard let resource = try? await TextureResource(named: "LeBao") else {
-                fatalError("러바오 없다")
+            guard let resource = try? await TextureResource(named: "ClearSky") else {
+                fatalError()
             }
             
             var material = UnlitMaterial()
